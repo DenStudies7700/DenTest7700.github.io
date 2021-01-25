@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DashCruft</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+  <nav>
+    <div class="menu animate__animated animate__fadeIn">
+      <ul>
+        <li>
+          <img src="img.png" width="25" height="25" style="vertical-align:middle">
+        </li>
+        <li>
+          <a href="#" class="menu-item">Projects</a>
+        </li>
+        <li>
+          <a href="http://invite.gg/dashcruft" class="menu-item" target="_blank">Discord Server</a>
+        </li>
+        <li>
+          <a href="http://YouTube.com/dashcruft" class="menu-item" target="_blank">YouTube Channel</a>
+        </li>
+        <li>
+          <a href="#" class="menu-item" style="display:inline-block;pointer-events: none; color: grey;">Staff
+            Application</a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">Bobux</a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">Contact</a>
+        </li>
+
+        <li>
+          <a href="#" id="search">
+            <i class="fa fa-search"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="search-form">
+        <form>
+          <input type="text" name="search" placeholder="Search...">
+        </form>
+      </div>
+      <a class="close">
+        <i class="fa fa-times"></i>
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        <div class="rectangle"></div>
+        <a href="#home" class="active">Projects</a>
+        <a href="http://invite.gg/dashcruft" class="active">Discord Server</a>
+        <a href="http://YouTube.com/dashcruft" class="active">YouTube Channel</a>
+        <a href="#home" class="active" style="display:inline-block;pointer-events: none; color: grey;">Staff
+          Application</a>
+        <a href="#home" class="active">Bobux</a>
+        <a href="#home" class="active">Contact</a>
+      </a>
+    </div>
+  </nav>
+
+
+  <h1 style="font-size:13vw" class="title animate__animated animate__fadeInDown animate__faster">
+    DashCruft
+  </h1>
+
+  <h2 style="font-size:5vw; text-shadow: 7px 8px rgba(20, 20, 20, 0.99);" class="title animate__animated animate__fadeInBottomLeft">
+    <p id="demo"></p>
+  </h2>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#search').click(function () {
+        $('.menu-item').addClass('hide-item')
+        $('.search-form').addClass('active')
+        $('.close').addClass('active')
+        $('#search').hide()
+      })
+      $('.close').click(function () {
+        $('.menu-item').removeClass('hide-item')
+        $('.search-form').removeClass('active')
+        $('.close').removeClass('active')
+        $('#search').show()
+      })
+    })
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+  <script>
+    var countDownDate = new Date("Jan 29, 2021 20:00:00").getTime();
+
+    var x = setInterval(function () {
+
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 300);
+  </script>
+</body>
+
+</html>
