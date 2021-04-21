@@ -285,13 +285,13 @@ iframe {
   display: table;
 }
 
-.picture {
+.picture-linux {
   position: relative;
-  height: 310px;
-  width: 550px;
+  height: 470px;
+  width: 900px;
   border-radius: 16px;
   display: block;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   margin-left: auto;
   margin-right: auto;
   background-image: url('');
@@ -314,10 +314,51 @@ iframe {
   -moz-transition: 0.7s ease all;
 }
 
-.picture:hover {
+.picture-linux:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.title-linux {
+  text-rendering: optimizeLegibility;
+  font-family: montserrat-bold;
+  z-index: -1;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.small-text-linux {
+    position: relative;
+    font-family: montserrat-bold;
+    font-size: 35px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.list-linux {
+    position: relative;
+    font-family: montserrat-bold;
+    font-size: 25px;
+    display: block;
+    margin-top: -100px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    color: rgb(255, 255, 255);
 }
 
 /* If browser's size is less then <value>, then do this */
@@ -361,11 +402,6 @@ iframe {
     width: 80%;
   }
 
-  .picture {
-    width: 85%;
-    background-color: transparent;
-  }
-
   .xdtitle {
     font-size: 110px;
   }
@@ -376,6 +412,19 @@ iframe {
 
   .footer:hover {
     height: 180px;
+  }
+
+  .picture-linux {
+    width: 85%;
+    height: 85%;
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+
+  .title-linux {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
   }
 }
 

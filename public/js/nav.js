@@ -6,7 +6,7 @@ $(function () {
 
   bar += '<a class="py-2 d-none d-md-inline-block" href="/">Home</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/support">Support</a>';
-  bar += '<a class="py-2 d-none d-md-inline-block" href="/smp" id="noclick">SMP</a>';
+  bar += '<a class="py-2 d-none d-md-inline-block" href="/linux">Linux</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/staffapps">Staff Application</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/bobux">Bobux</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>';
@@ -33,7 +33,7 @@ $(function () {
   bar += '<a href="/bobux">Bobux</a>';
   bar += '<a href="/contact">Contact</a>';
   bar += '</div>';
-  
+
   bar += '</div>';
 
   $("#main-bar").html(bar);
