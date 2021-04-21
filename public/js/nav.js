@@ -28,7 +28,7 @@ $(function () {
   bar += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
   bar += '<a href="/">Home</a>';
   bar += '<a href="/support">Support</a>';
-  bar += '<a href="/Linux">Linux</a>';
+  bar += '<a href="/linux">Linux</a>';
   bar += '<a href="/staffapps">Staff Apps</a>';
   bar += '<a href="/bobux">Bobux</a>';
   bar += '<a href="/contact">Contact</a>';
