@@ -80,7 +80,6 @@ iframe {
   color: #808080;
 }
 
-
 /* Phone Navbar */
 #navbar-phone {
   display: flex;
@@ -197,7 +196,6 @@ iframe {
   color: white;
   text-align: center;
   transition: height .7s;
-
   animation: fadeInUp;
   animation-duration: .5s;
 }
@@ -210,7 +208,6 @@ iframe {
   width: 100%;
   color: white;
   text-align: center;
-
   animation: fadeInUp;
   animation-duration: .5s;
 }
@@ -249,7 +246,6 @@ iframe {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #36393F;
-
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
     0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07),
@@ -274,7 +270,6 @@ iframe {
   float: left;
   width: 33.33%;
   padding: 1px;
-
   animation: fadeIn;
   animation-duration: 1.5s;
 }
@@ -299,7 +294,6 @@ iframe {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #36393F;
-
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
     0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07),
@@ -336,29 +330,47 @@ iframe {
 }
 
 .small-text-linux {
-    position: relative;
-    font-family: montserrat-bold;
-    font-size: 35px;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  position: relative;
+  font-family: montserrat-bold;
+  font-size: 35px;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .list-linux {
-    position: relative;
-    font-family: montserrat-bold;
-    font-size: 25px;
-    display: block;
-    margin-top: -100px;
-    margin-bottom: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: left;
-    color: rgb(255, 255, 255);
+  position: relative;
+  font-family: montserrat-bold;
+  font-size: 25px;
+  display: block;
+  margin-top: -100px;
+  margin-bottom: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+  color: rgb(255, 255, 255)
+}
+
+.video-responsive {
+  margin-bottom: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+  padding-bottom: 53.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /* If browser's size is less then <value>, then do this */
@@ -388,10 +400,14 @@ iframe {
   }
 
   .title {
-    font-size: 65px;
+    font-size: 300%;
     padding-top: 90px;
     padding-bottom: 20px;
     text-rendering: optimizeLegibility;
+  }
+
+  .video-responsive {
+    margin-bottom: 10px;
   }
 
   .column {
@@ -426,22 +442,4 @@ iframe {
     padding-bottom: 50px;
     font-size: 35px;
   }
-}
-
-.video-responsive {
-  margin-bottom: 200px;
-  margin-left: 50px;
-  margin-right: 50px;
-  overflow: hidden;
-  padding-bottom: 53.25%;
-  position: relative;
-  height: 0;
-}
-
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
 }
