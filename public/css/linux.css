@@ -123,6 +123,14 @@ h1:after {
     text-rendering: optimizeLegibility;
   }
 
+  .page-warning {
+    font-size: 25px;
+  }
+
+  .step-list {
+    font-size: 16px;
+  }
+
   .picture-linux {
     width: 85%;
     height: 85%;
