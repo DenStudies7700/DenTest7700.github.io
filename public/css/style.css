@@ -332,7 +332,8 @@ iframe {
   }
 
   .video-responsive {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 44.25%;
   }
 
   .column {
@@ -353,18 +354,5 @@ iframe {
 
   .footer:hover {
     height: 180px;
-  }
-
-  .picture-linux {
-    width: 85%;
-    height: 85%;
-    margin-bottom: 20px;
-    background-color: transparent;
-  }
-
-  .title-linux {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 35px;
   }
 }
