@@ -33,7 +33,7 @@
 
   <div class="step-list">🟡 A working USB that has at least <code>8gb</code> storage<br />
     🟡 <a href="https://rufus.ie/en/" target="_blank">Rufus</a>: We need Rufus for making a bootable USB<br />
-    🟡 Download ISO file from your preferred linux System (<a href="https://ubuntu.com/" target="_blank">Ubuntu</a>, <a href="https://manjaro.org/" target="_blank">Manjaro</a>, <a href="https://pop.system76.com/" target="_blank">Pop OS</a>)<br />
+    🟡 Download ISO file from your preferred linux System (<a href="https://ubuntu.com/" target="_blank">Ubuntu</a>, <a href="https://manjaro.org/" target="_blank">Manjaro</a> or etc but this Guide is focused on Ubuntu & Manjaro)<br />
     🟡 At least <code>50gb</code> shrinked partition (Unlocated Space)<br />
     🟡 Patience and being calm whatsoever<br />
     🎁 Minimum System Requirements: 1gb RAM & One gigahertz (Ghz) processor<br />
@@ -57,15 +57,10 @@
     - Once the whole process is done, you should be able to see <code>ready</code> & you are ready to move to the next part.
   </div>
 
-  <h1>3. Installing Linux</h1>
+  <h1>3. Preparing for Installation</h1>
   <div class="step-title"></div><br /><br />
 
-  <div class="step-list" style="margin-bottom: 80px;text-align: center;">
-    TW/ This is one of the most <code>(Actually the most)</code> important part of this guide.<br />
-    !! You can wipe your whole PC and Windows if you do something wrong in this process !!<br /><br />
-  </div>
-
-  <div class="step-list" style="margin-bottom: 60px;">
+  <div class="step-list" style="margin-bottom: 40px;">
     Restart your computer. Keep pressing the button on your keyboard that shows the BIOS screen for your Laptop/PC while the restart accurs until the BIOS screen shows up. <br />
     The key is independent on your Laptop or Motherboard manufacture.<br />
     Do some research and find the BIOS button. It's usually <code>F12</code>, <code>F11</code>, <code>F1</code> or In most cases, the button <code>DEL</code> on your keyboard. <br /><br />
@@ -75,6 +70,48 @@
   </div>
 
   <img class="picture-linux-bios" src="/pictures/bios.png" /><br />
+
+  <div class="step-list" style="margin-bottom: 40px;">
+    - You should see a few options in the boots tab. All you have to do is just put your USB Drive on top of the other boot options so the Motherboard reads the USB/Drive first and it won't boot through your already exist Windows partition.<br /><br />
+
+    ● Save the changes and then exit your BIOS.<br />
+    ● Restart your computer and you should be atomaticlly facing a screen inside of your USB Drive.<br />
+    ● The screen you will be seeing & facing is independent on what Linux Distro you are installing. <br /><br />
+
+    ● NOTE: It might take a while for the setup screen to show up.<br />
+    ↳ Ubuntu: A loading screen shows up first. After a while, you are booted inside of a guest root and the installation window should show up:
+  </div>
+
+  <img class="picture-ubuntu-setup" src="/pictures/ubuntu-setup.png" /><br />
+
+  <div class="step-list" style="margin-bottom: 40px;">
+    ↳ Manjaro (KDE Plasma / XFCE / Gnome): You will first be asked to choose a driver. Either open-source driver or propriety driver. My Recommended option is the propriety since its more stable, smoother & includes less bugs. Open-Source is only good for more FPS but I noticed a huge diffrence in latency. Hit enter after you have chosen your driver. A black screen with a few logs happening will show up. Let it do its job & then you will be facing something similar to this screen:
+  </div>
+
+  <img class="picture-ubuntu-setup" src="/pictures/manjaro-setup.png" /><br />
+
+  <div class="step-list" style="margin-bottom: 80px;">
+    NOW, if you have faced those screens, Congrats, now you're ready to Head to the Installation Guide section. <br />
+    If not, I suggest looking through google to troubleshoot your problem.
+  </div>
+
+  <h1>4. Installing Linux</h1>
+  <div class="step-title"></div><br /><br />
+
+  <div class="step-list" style="margin-bottom: 100px;text-align: center;">
+    Okay so this section is going to Splited into 2 sections.<br />
+    <a href="#ubuntu">Ubuntu</a> or <a href="#manjaro">Manjaro</a>  (Click on the distribution you want to get redirected)
+  </div>
+
+  <div class="install-title" style="margin-bottom: 100px;text-align: center;" id="ubuntu">
+    ↳ Ubuntu ↲
+  </div>
+
+
+  <div class="install-title" style="margin-bottom: 100px;text-align: center;" id="manjaro">
+    ↳ Manjaro (XFCE, KDE Plasma, Gnome) ↲
+  </div>
+
 
   <div id="footer-area"></div>
 

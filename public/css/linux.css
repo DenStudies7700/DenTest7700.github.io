@@ -89,7 +89,7 @@
 .picture-linux-bios {
   position: relative;
   height: 430px;
-  width: 760px;
+  width: 730px;
   border-radius: 16px;
   display: block;
   margin-bottom: 80px;
@@ -118,6 +118,53 @@
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.picture-ubuntu-setup {
+  position: relative;
+  height: 430px;
+  width: 600px;
+  border-radius: 16px;
+  display: block;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #36393F;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: 0.7s ease all;
+  -webkit-transition: 0.7s ease all;
+  -moz-transition: 0.7s ease all;
+}
+
+.picture-ubuntu-setup:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.install-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 32px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -175,6 +222,13 @@ h1:after {
     background-color: transparent;
   }
 
+  .picture-ubuntu-setup {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 70px;
+    background-color: transparent;
+  }
+
   .title-linux {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -185,6 +239,11 @@ h1:after {
   h1:after {
     width: 13%;
   }
+
+  .install-title {
+    font-size: 26px;
+  }
+
 }
 
 @media screen and (max-width: 1600px) {
