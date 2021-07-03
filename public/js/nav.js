@@ -6,7 +6,7 @@ $(function () {
 
   bar += '<a class="py-2 d-none d-md-inline-block" href="/">Home</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/support">Support</a>';
-  bar += '<a class="py-2 d-none d-md-inline-block" href="/linux">Linux</a>';
+  bar += '<a href="javascript:void(0);" class="disabled py-2 d-none d-md-inline-block" style="color: #7A7A7A;">Incomplete</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/staffapps">Staff Application</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/bobux">Bobux</a>';
   bar += '<a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>';
@@ -28,7 +28,7 @@ $(function () {
   bar += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
   bar += '<a href="/">Home</a>';
   bar += '<a href="/support">Support</a>';
-  bar += '<a href="/linux">Linux</a>';
+  bar += '<a href="javascript:void(0);" class="disabled" style="color: #7A7A7A;">Incomplete</a>';
   bar += '<a href="/staffapps">Staff Apps</a>';
   bar += '<a href="/bobux">Bobux</a>';
   bar += '<a href="/contact">Contact</a>';

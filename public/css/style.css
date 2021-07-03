@@ -51,6 +51,11 @@ iframe {
   overflow: hidden;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* Header */
 .site-header {
   z-index: 0;
