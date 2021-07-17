@@ -1,8 +1,8 @@
 $(function () {
     var bar = '';
     bar += '<div class="footer">';
-    bar += '<div class="footerText"> ⭐ Check Out <a href="https://dashcruft.com/kite" target="_blank">Kite</a>! </div>';
-    bar += '<div class="footerText" style="font-size: 25px;"> Kite is a free AI-powered coding assistant that will help you code faster and smarter. </div>';
+    bar += '<div class="footerText"> ⭐ Updates Coming Soon! ⭐ </div>';
+    bar += '<div class="footerText" style="font-size: 25px;"> Website is under construction. Thanks for your patience! </div>';
     bar += '</div>';
     $("#footer-area").html(bar);
 
