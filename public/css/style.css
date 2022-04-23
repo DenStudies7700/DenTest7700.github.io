@@ -1,6 +1,3 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-
 @font-face {
   font-family: montserrat-bold;
   src: url('/fonts/Montserrat-SemiBold.woff') format('woff');
@@ -16,20 +13,223 @@
   src: url('/fonts/SFPro.woff') format('woff');
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
+@font-face {
+  font-family: MavenPro;
+  src: url('../fonts/MavenPro-Regular.woff') format('woff');
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-position: center;
-  background-size: 1650px;
   background-repeat: no-repeat;
-  background-position-y: 40px;
-  background-color: #292929;
+
+
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 96vh;
+  overflow: hidden;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.night {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(45deg);
+}
+.shooting_star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, rgb(130, 95, 255), rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgba(130, 95, 255, 1));
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+.shooting_star::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(130, 95, 255, 1), rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 3000ms ease-in-out infinite;
+}
+.shooting_star::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(130, 95, 255, 1), rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 3000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+.shooting_star:nth-child(1) {
+  top: calc(50% - 131px);
+  left: calc(50% - 202px);
+  animation-delay: 8979ms;
+}
+.shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
+  animation-delay: 8979ms;
+}
+.shooting_star:nth-child(2) {
+  top: calc(50% - -159px);
+  left: calc(50% - 175px);
+  animation-delay: 4800ms;
+}
+.shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
+  animation-delay: 4800ms;
+}
+.shooting_star:nth-child(3) {
+  top: calc(50% - -12px);
+  left: calc(50% - 239px);
+  animation-delay: 6928ms;
+}
+.shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
+  animation-delay: 6928ms;
+}
+.shooting_star:nth-child(4) {
+  top: calc(50% - -87px);
+  left: calc(50% - 245px);
+  animation-delay: 6568ms;
+}
+.shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
+  animation-delay: 6568ms;
+}
+.shooting_star:nth-child(5) {
+  top: calc(50% - -1px);
+  left: calc(50% - 116px);
+  animation-delay: 3334ms;
+}
+.shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
+  animation-delay: 3334ms;
+}
+.shooting_star:nth-child(6) {
+  top: calc(50% - 8px);
+  left: calc(50% - 233px);
+  animation-delay: 5119ms;
+}
+.shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after {
+  animation-delay: 5119ms;
+}
+.shooting_star:nth-child(7) {
+  top: calc(50% - -143px);
+  left: calc(50% - 214px);
+  animation-delay: 2055ms;
+}
+.shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after {
+  animation-delay: 2055ms;
+}
+.shooting_star:nth-child(8) {
+  top: calc(50% - 128px);
+  left: calc(50% - 208px);
+  animation-delay: 2407ms;
+}
+.shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after {
+  animation-delay: 2407ms;
+}
+.shooting_star:nth-child(9) {
+  top: calc(50% - -105px);
+  left: calc(50% - 58px);
+  animation-delay: 5149ms;
+}
+.shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after {
+  animation-delay: 5149ms;
+}
+.shooting_star:nth-child(10) {
+  top: calc(50% - -8px);
+  left: calc(50% - 197px);
+  animation-delay: 8489ms;
+}
+.shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after {
+  animation-delay: 8489ms;
+}
+.shooting_star:nth-child(11) {
+  top: calc(50% - -52px);
+  left: calc(50% - 52px);
+  animation-delay: 205ms;
+}
+.shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
+  animation-delay: 205ms;
+}
+.shooting_star:nth-child(12) {
+  top: calc(50% - -169px);
+  left: calc(50% - 262px);
+  animation-delay: 3028ms;
+}
+.shooting_star:nth-child(12)::before, .shooting_star:nth-child(12)::after {
+  animation-delay: 3028ms;
+}
+.shooting_star:nth-child(13) {
+  top: calc(50% - 131px);
+  left: calc(50% - 104px);
+  animation-delay: 4857ms;
+}
+.shooting_star:nth-child(13)::before, .shooting_star:nth-child(13)::after {
+  animation-delay: 4857ms;
+}
+.shooting_star:nth-child(14) {
+  top: calc(50% - 34px);
+  left: calc(50% - 261px);
+  animation-delay: 8729ms;
+}
+.shooting_star:nth-child(14)::before, .shooting_star:nth-child(14)::after {
+  animation-delay: 8729ms;
+}
+.shooting_star:nth-child(15) {
+  top: calc(50% - 29px);
+  left: calc(50% - 285px);
+  animation-delay: 5803ms;
+}
+.shooting_star:nth-child(15)::before, .shooting_star:nth-child(15)::after {
+  animation-delay: 5803ms;
+}
+.shooting_star:nth-child(16) {
+  top: calc(50% - 92px);
+  left: calc(50% - 96px);
+  animation-delay: 4591ms;
+}
+.shooting_star:nth-child(16)::before, .shooting_star:nth-child(16)::after {
+  animation-delay: 4591ms;
+}
+.shooting_star:nth-child(17) {
+  top: calc(50% - 160px);
+  left: calc(50% - 133px);
+  animation-delay: 5378ms;
+}
+.shooting_star:nth-child(17)::before, .shooting_star:nth-child(17)::after {
+  animation-delay: 5378ms;
+}
+.shooting_star:nth-child(18) {
+  top: calc(50% - 174px);
+  left: calc(50% - 93px);
+  animation-delay: 3108ms;
+}
+.shooting_star:nth-child(18)::before, .shooting_star:nth-child(18)::after {
+  animation-delay: 3108ms;
+}
+.shooting_star:nth-child(19) {
+  top: calc(50% - -148px);
+  left: calc(50% - 245px);
+  animation-delay: 2775ms;
+}
+.shooting_star:nth-child(19)::before, .shooting_star:nth-child(19)::after {
+  animation-delay: 2775ms;
+}
+.shooting_star:nth-child(20) {
+  top: calc(50% - -184px);
+  left: calc(50% - 97px);
+  animation-delay: 7191ms;
+}
+.shooting_star:nth-child(20)::before, .shooting_star:nth-child(20)::after {
+  animation-delay: 7191ms;
 }
 
 html,
@@ -56,27 +256,7 @@ a.disabled {
   cursor: default;
 }
 
-/* Header */
-.site-header {
-  z-index: 0;
-  background-color: #202020;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.site-header a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #c0c0c0;
-  transition: color .15s ease-in-out;
-}
-
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.py-2 {
+.py-2 mb-0 {
   font-family: SFPro;
 }
 
@@ -85,32 +265,50 @@ a.disabled {
   color: #808080;
 }
 
-/* Phone Navbar */
-#navbar-phone {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
 
-#navbar-phone-head {
-  background: #292929;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 9999;
-  padding-top: 10px;
-}
-
-#navbar-phone-head-txt {
-  color: #ffffff;
-  font-size: 30px;
-  padding-top: 20px;
-  padding-left: 10vw;
+.title {
+  text-rendering: optimizeLegibility;
+  font-family: montserrat-bold;
+  padding-top: 1%;
+  padding-bottom: 80px;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-size: 180px;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
     0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
-  visibility: hidden;
+}
+
+.logo-near-text {
+  padding-right: 8px;
+}
+
+/* Phone Navbar */
+#navbar-phone {
+  display:none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10;
+  width: 9%;
+}
+
+#navbar-phone-head {
+  width: 100%;
+  align-items: center;
+  z-index: 9999;
+  margin-top: 10px;
+}
+
+#navbar-phone-head:hover {
+  cursor: pointer;
 }
 
 #navbar-phone-lol {
@@ -129,7 +327,8 @@ a.disabled {
   background-color: rgb(39, 39, 39);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -140,12 +339,11 @@ a.disabled {
   color: #c0c0c0;
   display: block;
   transition: 0.3s;
-  font-family: montserrat-bold;
+  font-weight: bold;
 }
 
 .navbar-phone-container a:hover {
   color: #f1f1f1;
-  cursor: default;
 }
 
 .navbar-phone-container .closebtn {
@@ -154,21 +352,6 @@ a.disabled {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
-.title {
-  text-rendering: optimizeLegibility;
-  font-family: montserrat-bold;
-  z-index: -1;
-  padding-top: 10px;
-  padding-bottom: 80px;
-  position: relative;
-  color: #fff;
-  text-align: center;
-  font-size: 180px;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-    0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .projects {
@@ -202,7 +385,7 @@ a.disabled {
   text-align: center;
   transition: height .7s;
   animation: fadeInUp;
-  animation-duration: .5s;
+  animation-duration: .4s;
 }
 
 .footer:hover {
@@ -214,12 +397,12 @@ a.disabled {
   color: white;
   text-align: center;
   animation: fadeInUp;
-  animation-duration: .5s;
+  animation-duration: .3s;
 }
 
 .footerText {
   font-size: 25px;
-  font-family: "Maven Pro";
+  font-family: MavenPro;
   color: white;
   margin: 12px;
 }
@@ -309,20 +492,29 @@ a.disabled {
     visibility: hidden;
   }
 
-  #navbar-phone-head-txt {
+  .image {
     visibility: visible;
   }
 
-  #navbar-phone-lol {
-    visibility: visible;
+  .title {
+    font-size: 300%;
+    text-rendering: optimizeLegibility;
   }
 
-  .menu {
+  .footer:hover {
+    height: 180px;
+  }
+
+  .logo-near-text {
     visibility: hidden;
   }
+}
 
-  .menu {
-    width: 0;
+
+/* If browser's size is less then <value>, then do this */
+@media screen and (max-width: 800px) {
+  .site-header {
+    visibility: hidden;
   }
 
   .image {
@@ -331,8 +523,7 @@ a.disabled {
 
   .title {
     font-size: 300%;
-    padding-top: 90px;
-    padding-bottom: 20px;
+    margin-bottom: 90px;
     text-rendering: optimizeLegibility;
   }
 
@@ -360,4 +551,49 @@ a.disabled {
   .footer:hover {
     height: 180px;
   }
+
+  .site-logo {
+    visibility:hidden;
+  }
+
+}
+
+
+@keyframes tail {
+  0% {
+    width: 0;
+ }
+  30% {
+    width: 100px;
+ }
+  100% {
+    width: 0;
+ }
+}
+@keyframes shining {
+  0% {
+    width: 0;
+ }
+  50% {
+    width: 30px;
+ }
+  100% {
+    width: 0;
+ }
+}
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+ }
+  100% {
+    transform: translateX(300px);
+ }
+}
+@keyframes sky {
+  0% {
+    transform: rotate(45deg);
+ }
+  100% {
+    transform: rotate(405deg);
+ }
 }

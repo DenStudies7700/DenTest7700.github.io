@@ -1,24 +1,21 @@
-$(function () {
-    var bar = '';
+document.addEventListener("DOMContentLoaded", () => {
+    let bar = '';
     bar += '<div class="footer">';
     bar += '<div class="footerText"> ⭐ Updates Coming Soon! ⭐ </div>';
     bar += '<div class="footerText" style="font-size: 25px;"> Website is under construction. Thanks for your patience! </div>';
     bar += '</div>';
-    $("#footer-area").html(bar);
-
-    var id = getValueByName("id");
-    $("#" + id).addClass("active");
+    document.getElementById("footer-area").innerHTML = bar;
 });
 
 function getValueByName(name) {
-    var url = document.getElementById('footer-lol').getAttribute('src');
-    var param = new Array();
+    let url = document.getElementById('footer-lol').getAttribute('src');
+    let param = new Array();
     if (url.indexOf("?") != -1) {
-        var source = url.split("?")[1];
+        let source = url.split("?")[1];
         items = source.split("&");
-        for (var i = 0; i < items.length; i++) {
-            var item = items[i];
-            var parameters = item.split("=");
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
+            let parameters = item.split("=");
             if (parameters[0] == "id") {
                 return parameters[1];
             }

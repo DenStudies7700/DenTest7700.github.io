@@ -1,13 +1,10 @@
 .support-title {
-    margin-top: 50px;
+    margin-top: 180px;
     z-index: -1;
     position: relative;
     color: #fff;
     text-align: center;
     font-size: 130px;
-
-    animation: backInDown;
-    animation-duration: 0.8s;
 }
 
 .heroku_button {

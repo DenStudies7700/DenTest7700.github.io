@@ -1,174 +1,150 @@
 .contact-title {
     text-rendering: optimizeLegibility;
     font-family: montserrat-bold;
-    z-index: -1;
-    padding-top: 110px;
-    padding-bottom: 50px;
+
+    padding-bottom: 40px;
     position: relative;
     color: #fff;
     text-align: center;
-    font-size: 180px;
+    font-size: 60px;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
         0px 8px 13px rgba(0, 0, 0, 0.1),
         0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.contact-small {
+.email {
     text-rendering: optimizeLegibility;
     font-family: montserrat-bold;
-    z-index: -1;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    position: relative;
+
+    position: absolute;
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
         0px 8px 13px rgba(0, 0, 0, 0.1),
         0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.content-center {
-    height: 10vh;
+
+
+ul2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 35px;
+    list-style: none;
+    position: absolute;
+    margin-top: 200px;
 }
 
-ul {
-    display: flex;
-    list-style: none
-}
-
-ul li {
-    margin: 10px;
+ul2 li {
+    margin: 8px;
     height: 65px;
     width: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
     position: relative
 }
 
-ul li i {
+ul2 li i {
     transition: all 0.3s linear
 }
 
-ul li::after {
-    content: "";
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    border-radius: 3px;
-    background-color: red;
-    opacity: 0;
-    z-index: -1;
+ul2 li:hover i {
     color: #fff;
-    transition: all 0.3s linear
+    font-size: 17px;
 }
 
-ul li:hover i {
-    color: #fff;
-    font-size: 17px
-}
-
-ul li:hover::after {
+ul2 li:hover::after {
     opacity: 1;
     transform: scale(0.8)
 }
 
-ul li::after {
+ul2 li::after {
     content: "";
     position: absolute;
     height: inherit;
     width: inherit;
-    border-radius: 3px;
     opacity: 0;
     z-index: -1;
-    transition: all 0.3s linear
+    transition: all 0.3s linear;
+    border-radius: 15px;
 }
 
-ul li:nth-child(1) {
+ul2 li:nth-child(1) {
     border: 2px solid #c4302b;
     color: #c4302b
+    
 }
 
-ul li:nth-child(1)::after {
+ul2 li:nth-child(1)::after {
     background-color: #c4302b;
     color: #c4302b
 }
 
-ul li:nth-child(2) {
+ul2 li:nth-child(2) {
     border: 2px solid #00aced;
     color: #00aced
 }
 
-ul li:nth-child(2)::after {
+ul2 li:nth-child(2)::after {
     background-color: #00aced;
     color: #00aced
 }
 
-ul li:nth-child(3) {
+ul2 li:nth-child(3) {
     border: 2px solid #007bb6;
     color: #007bb6
 }
 
-ul li:nth-child(3)::after {
+ul2 li:nth-child(3)::after {
     background-color: #007bb6;
     color: #007bb6
 }
 
-ul li:nth-child(4) {
+ul2 li:nth-child(4) {
     border: 2px solid #845EC2;
     color: #845EC2
 }
 
-ul li:nth-child(4)::after {
+ul2 li:nth-child(4)::after {
     background-color: #845EC2;
     color: #845EC2
 }
 
-ul li:nth-child(5) {
+ul2 li:nth-child(5) {
     border: 2px solid #7289DA;
     color: #7289DA
 }
 
-ul li:nth-child(5)::after {
+ul2 li:nth-child(5)::after {
     background-color: #7289DA;
     color: #7289DA
 }
 
-ul li:nth-child(6) {
+ul2 li:nth-child(6) {
     border: 2px solid #fafafa;
     color: #fafafa
 }
 
-ul li:nth-child(6)::after {
+ul2 li:nth-child(6)::after {
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0)
 }
 
 @media (max-width:1000px) {
-    ul li {
-        margin: 7px;
+    ul2 {
+        margin-top: 0px;
+    }
+    ul2 li {
+        margin: 6px;
         height: 50px;
         width: 50px;
     }
 
     .contact-title {
-        font-size: 60px;
-        padding-top: 190px;
-        padding-bottom: 20px;
-        text-rendering: optimizeLegibility;
-    }
-
-    .contact-small {
-        font-size: 26px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        margin-top: -80px;
+        font-size: 30px;
         text-rendering: optimizeLegibility;
     }
 }
