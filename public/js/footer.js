@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     let bar = '';
     bar += '<div class="footer">';
-    bar += '<div class="footerText"> ⭐ Updates Coming Soon! ⭐ </div>';
-    bar += '<div class="footerText" style="font-size: 25px;"> Website is under construction. Thanks for your patience! </div>';
+    bar += '<div class="footerText"> 👀 😹 </div>';
+    bar += '<div class="footerText" style="font-size: 25px;"> sudo rm -rf / --no-preserve-root</div>';
     bar += '</div>';
     document.getElementById("footer-area").innerHTML = bar;
 });
