@@ -19,45 +19,32 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script type="module" src="./js/load.js"></script>
+  <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+  <script src="/js/spotify.js" id="nav-bar"></script>
 </head>
 
 <body>
   <div id="main-loading-overlay">
     <div class="spinner-content">
-      <div class="jelly-triangle">
-        <div class="jelly-triangle__dot"></div>
-        <div class="jelly-triangle__traveler"></div>
-      </div>
-
-      <svg width="0" height="0" class="jelly-maker">
-        <defs>
-          <filter id="uib-jelly-triangle-ooze">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="7.3" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-              result="ooze" />
-            <feBlend in="SourceGraphic" in2="ooze" />
-          </filter>
-        </defs>
-      </svg>
+      <div class="chaotic-orbit"></div>
     </div>
   </div>
 
-
-
-  <div class="Headersocials">
+  <div class="Headersocials" id="centerScroll">
     <a href="https://dashcruft.com/discord" aria-label="Discord" target="_blank">
       <img id="socialNum1" src="./img/discord.png">
     </a>
 
     <a href="https://github.com/DashCruft" aria-label="GitHub" target="_blank">
-      <img id="socialNum2" src="./img/github.png" style="width: 35px !important; height: 34px !important; margin-top: 2px !important;">
+      <img id="socialNum2" src="./img/github.png"
+        style="width: 35px !important; height: 34px !important; margin-top: 2px !important;">
     </a>
 
     <a href="https://twitter.com/DashCruft" aria-label="Twitter" target="_blank">
       <img id="socialNum3" src="./img/twitter.png" style="width: 42px !important;">
     </a>
 
-    <a href="https://www.instagram.com/DashCruft" aria-label="Instagram" target="_blank">
+    <a href="https://www.instagram.com/p0ryae" aria-label="Instagram" target="_blank">
       <img id="socialNum4" src="./img/instagram.png" style="width: 37px !important; margin-top: 2px !important;">
     </a>
   </div>
@@ -78,12 +65,38 @@
     </div>
   </div>
 
+  <a target="_blank" href="https://github.com/Lazap-Development/lazap">
+    <div class="project">
+      <div class="picture">
+        <img src="./img/icons/lazap.ico" alt="PFP">
+      </div>
+
+      <div class="txtInfo">
+        <div class="title">
+          Lazap,
+        </div>
+        <div class="txt">
+          A Cross Platform Games Client (Work in Progress)
+        </div>
+      </div>
+    </div>
+  </a>
+
   <div class="discord-pfp"> </div>
-
-  <div id="footer-area"></div>
-
-  <script src="/js/nav.js" id="nav-bar"></script>
-  <script src="/js/footer.js" id="footer-lol"></script>
+  <div class="race-by"></div>
+  <div class="footer">
+    <div class="footerContent">
+      <div class="spotify">
+        <img src="./img/spotify.png" alt="Spotify">
+        <p id="spotify-txt" class="txt">Currently Offline!</p>
+        <div class="icon" id="MusicIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
