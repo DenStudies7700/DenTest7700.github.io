@@ -25,4 +25,22 @@ REFRESH_TOKEN=PUT_UR_REFRESH_TOKEN_HERE
 ```
 
 To get the Client ID and secret, head over to https://developer.spotify.com/dashboard/ and login.
-<br>Create yourself an application and once you have, you will see a page like this:
+<br>Create yourself an application and once you have, you will see a page like this:<br>
+![2022-05-12_22-01](https://user-images.githubusercontent.com/59381835/168214406-dbd44b23-1d74-4d36-8f98-0881d05ccc3d.png)
+<br><br>
+Copy the client id and client secret and replace them with the `PUT_YOUR_CLIENT_ID_HERE` and `PUT_YOUR_CLIENT_SECRET_HERE`.
+
+For getting the Refresh Token, visit https://getyourspotifyrefreshtoken.herokuapp.com/<br>
+**NOTE:** Remember to add https://getyourspotifyrefreshtoken.herokuapp.com/callback as a **redirect uri** in your app by hitting the ``EDIT SETTINGS`` button in your spotify dashboard. Remember to add https://getyourspotifyrefreshtoken.herokuapp.com/callback as a redirect uri in your app.
+
+Fill the info:<br>
+![image](https://user-images.githubusercontent.com/59381835/168215027-b355d8bb-9be4-44a8-ab5e-eb7ff25c29a2.png)
+
+Once done, you should see your **refresh token** showing up at the bottom of the alongside other infos. Copy the refresh token and replace it with the 
+``PUT_UR_REFRESH_TOKEN_HERE`` in the `.env` file.
+
+
+**You are done!** Run the `SpotifyTokenRegen.js` with `node SpotifyTokenRegen.js` and the website by `node index.js`. Be sure to keep the `SpotifyTokenRegen.js`process running so it regenerates the access token automatically.
+
+Go ahead and try out the website and the Integration that I developed. Open an issue in case you have any problems. 
+
