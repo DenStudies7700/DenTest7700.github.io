@@ -113,13 +113,14 @@ a:active {
   width: 360px;
   height: 110px;
   background-color: #0C141D;
-  transition: scale 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px
 }
 
 .project:hover {
   cursor: pointer;
-  scale: 1.07;
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .project .picture img {
@@ -170,11 +171,12 @@ a:active {
 
 .Headersocials img {
   width: 40px;
-  transition: scale 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
 }
 
 .Headersocials img:hover {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #main-loading-overlay {
