@@ -40,7 +40,7 @@ Once done, you should see your **refresh token** showing up at the bottom of the
 ``PUT_UR_REFRESH_TOKEN_HERE`` in the `.env` file.
 
 
-**You are done!** Run the `SpotifyTokenRegen.js` with `node SpotifyTokenRegen.js` and the website by `node index.js`. Be sure to keep the `SpotifyTokenRegen.js`process running so it regenerates the access token automatically.
+**You are done!** Run the `SpotifyTokenRegen.js` with `node SpotifyTokenRegen.js` and the website by `node index.js`. Be sure to keep the `SpotifyTokenRegen.js` process running so it regenerates the access token automatically.
 
 Go ahead and try out the website and the Integration that I developed. Open an issue in case you have any problems. 
 
