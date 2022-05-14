@@ -31,7 +31,7 @@ To get the Client ID and secret, head over to https://developer.spotify.com/dash
 Copy the client id and client secret and replace them with the `PUT_YOUR_CLIENT_ID_HERE` and `PUT_YOUR_CLIENT_SECRET_HERE`.
 
 For getting the Refresh Token, visit https://getyourspotifyrefreshtoken.herokuapp.com/<br>
-**NOTE:** Remember to add https://getyourspotifyrefreshtoken.herokuapp.com/callback as a **redirect uri** in your app by hitting the ``EDIT SETTINGS`` button in your spotify dashboard. Remember to add https://getyourspotifyrefreshtoken.herokuapp.com/callback as a redirect uri in your app.
+**NOTE:** Remember to add https://getyourspotifyrefreshtoken.herokuapp.com/callback as a **redirect uri** in your app by hitting the ``EDIT SETTINGS`` button in your spotify dashboard.
 
 Fill the info:<br>
 ![image](https://user-images.githubusercontent.com/59381835/168215027-b355d8bb-9be4-44a8-ab5e-eb7ff25c29a2.png)
