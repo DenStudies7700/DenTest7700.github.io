@@ -4,7 +4,7 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "start": "pm2 start dash"
+        "start": "node index.js"
     },
     "dependencies": {
         "axios": "^0.27.2",
