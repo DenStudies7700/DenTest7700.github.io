@@ -85,9 +85,6 @@ a:active {
 .container .pfp img {
   width: 80px;
   height: 80px;
-
-  /*border: 0px solid rgb(88, 101, 242);
-  border-radius: 40px;*/
 }
 
 .container .txt {
@@ -245,6 +242,27 @@ a:active {
   font-family: MavenPro;
   color: white;
   margin: 12px;
+}
+
+.spotify {
+  margin-top: -20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.spotify .txt {
+  color: white;
+  font-family: 'MavenPro';
+  font-size: 22px;
+}
+
+.spotify img {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 14px;
 }
 
 .icon {
@@ -522,6 +540,17 @@ span:nth-of-type(3) {
 @media screen and (max-width: 800px) {
   .title {
     font-size: 50px;
+  }
+
+  .spotify .txt {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  .spotify img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
   }
 
   .icon {
