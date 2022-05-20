@@ -256,6 +256,7 @@ a:active {
   color: white;
   font-family: 'MavenPro';
   font-size: 15px;
+  align-content: center;
 }
 
 .icon {
