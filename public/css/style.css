@@ -258,12 +258,12 @@ a:active {
   font-size: 20px;
 }
 
-.spotify img {
+/*.spotify img {
   width: 30px;
   height: 30px;
   margin-top: 20px;
   margin-right: 14px;
-}
+}*/
 
 .icon {
   display: flex;
@@ -547,11 +547,11 @@ span:nth-of-type(3) {
     font-size: 18px;
   }
 
-  .spotify img {
+  /*.spotify img {
     width: 28px;
     height: 28px;
     margin-right: 10px;
-  }
+  }*/
 
   .icon {
     margin-left: 10px;
