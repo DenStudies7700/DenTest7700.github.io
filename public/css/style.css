@@ -408,7 +408,7 @@ span:nth-of-type(3) {
 .chaotic-orbit::after {
   animation: orbit var(--uib-speed) linear calc(var(--uib-speed) / -2)
     infinite;
-}*/
+}
 
 @keyframes rotate {
   0% {
@@ -504,7 +504,7 @@ span:nth-of-type(3) {
     transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);
     opacity: 0.65;
   }
-}
+}*/
 
 
 
