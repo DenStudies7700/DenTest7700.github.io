@@ -16,8 +16,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  /*background-color: #212226;*/
-  background-image: url("../img/bgImg.jpg");
+  background-color: #212226;
+  /*background-image: url("../img/bgImg.jpg");*/
   height: 96vh;
   overflow: hidden;
   display: flex;
