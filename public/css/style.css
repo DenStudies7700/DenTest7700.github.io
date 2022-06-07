@@ -18,7 +18,7 @@ body {
 
   /*background-color: #212226;*/
   background-image: url("../img/bgImg.jpg");
-  height: 1000px;
+  /*height: 1000px;*/
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@ body {
 
 html,
 body {
+  height: 1000px;
   overflow-y: hidden;
   overflow-x: hidden;
   overflow-y: none;
